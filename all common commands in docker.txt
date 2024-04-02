@@ -1,0 +1,154 @@
+wsl --version
+
+wsl -v
+
+clear
+ wsl
+wsl
+wsl --install --no-distribution
+wsl --status
+wsl --update
+wsl --status
+wsl -l -v
+clear
+wsl --status
+wsl -l -v
+docker info
+docker logs
+docker ps -a
+docker ps
+docker ps -a
+docker images
+docker pull hello-world
+docker images
+docker search mysql
+docker ps
+docker ps -a
+docker ps
+docker run hello-world
+docker ps
+docker ps -a
+docker inspect 766
+docker run hello-world:latest
+docker ps
+docker ps -a
+docker run --name hello-world
+docker run --name hello-c1 hello-world
+docker ps -a
+docker images
+docker run --id d2c94 hello-world
+docker run --pid d2c94 hello-world
+docker run --help
+docker run --pid d2c94e258dcb hello-world
+docker run --pid "d2c94e258dcb" hello-world
+clear
+docker run --name hello-c1 d2c94e258dcb
+docker run --name hello-c2 d2c94e258dcb
+docker ps -a
+docker images
+docker search python
+docker pull python:slim
+docker images
+docker run --name python-p1 python:slim
+docker ps 
+docker ps -a
+docker run --name python-p2 --detach python:slim
+docker ps -a
+docker ps
+docker run --name python-p2 --interactive --terminal --detach python:slim
+docker run --name python-p2 --interactive --t --detach python:slim
+docker run --name python-p2 --interactive -t --detach python:slim
+docker run --name python-p3 --interactive -t --detach python:slim
+docker ps
+docker ps -a
+docker exec -it python-c3 python
+docker exec -it python-p3 python
+clear
+docker run --name python-p4 --interactive -t python:slim
+docker run --name python-p4 --interactive -t --rm python:slim
+docker run --name python-p5 --interactive -t --rm python:slim
+docker ps -a
+docker stop python-p3
+docker ps -a
+docker start python-p3
+docker ps -a
+docker stop python-p3
+docker ps
+docker ps -a
+clear
+docker ps -a
+docker rm agitated_allen
+docker ps -a
+docker images
+docker rmi python
+docker rmi python:slim
+
+
+docker ps -a
+docker rm hello-world
+docker rm a1
+docker rm 76
+docker ps -a
+docker rm ec
+docker ps -a
+docker run --name hello-c1 hello-world
+docker ps -a
+docker rmi hello-world
+docker rm 3
+docker ps -a
+docker rmi hello-world
+docker ps -a
+ docker images
+docker ps -a
+docker container prune
+clear
+docker ps =a
+docker ps -a
+docker images
+docker ps -a
+docker system prune
+clear
+docker images
+docker run --name python-c1 -d python:slim
+docker exec -it python-p3 python
+docker images
+docker ps -a
+docker exec -it python-c1 python
+docker run --name python-c1 --it -d python:slim
+docker run --name python-c1 -it -d python:slim
+docker run --name python-c2 -it -d python:slim
+docker exec -it python-c1 python
+docker ps -a
+docker exec -it python-c2 python
+docker logs python-c3
+docker logs python-c2
+docker container prune
+clear
+docker ps -a
+docker images
+docker ps
+docker images
+docker container
+docker ps -a
+docker stop python-c2
+clear
+docker images
+docker pull mysql
+docker run --name mysql-c1 -e MYSQL_ROOT_PASSWORD=root -d mysql
+docker ps -a
+docker rm python-c1 python-c2
+docker ps -a
+docker exec -it mysql-c1 bash
+docker exec -it mysql-c1 -u root -p
+docker ps -a
+docker exec -it mysql-c1 mysql -u root -p
+clear
+docker ps -a
+now exposing port 
+clear
+docker pull nginx
+docker run --name nginx-c1 -d -p 8080:80 nginx
+docker stop nginx
+docker stop nginx-c1
+docker run --name nginx-c1 -d -p 8080:80 nginx
+docker start nginx-c1
